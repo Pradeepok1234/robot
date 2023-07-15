@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <style>
+        .box{
+            height:700px;
+            width:1090px;
+            border-right: -60px;
+            border:1px solid black;
+            background-color: aqua;
+            animation-name: bmove;
+            animation-duration: 2s;
+            animation-iteration-count: infinite ;
+        }
+        @keyframes bmove {
+            0% {
+                background-color: blue;
+                border-radius: 100px;
+            }
+            50% {
+                background-color: pink;
+            }
+            100% {
+                background-color: orangered;  
+            }
+            
+           
+
+            
+        }
+        .rb{
+            height: 400px;
+            width: 250px;
+            border: 1px solid green;
+            border-radius: 200px;
+            position: relative;
+            top: 50px;
+            left: 419px;
+            background-color: rgb(153, 248, 64);
+            
+        }
+        .rrh{
+            height: 250px;
+            width: 30px;
+            border: 1px solid green;
+            border-radius: 300px;
+            position: relative;
+            bottom: 240px;
+            left: 383px;
+            background-color: rgb(153, 248, 64);
+            animation-name: rmove;
+            animation-duration: 2s;
+            animation-iteration-count: infinite ;
+        }
+        @keyframes rmove {
+            0%,25% {
+                transform: rotate(0deg,-50deg);
+            }
+            80% {
+                transform: rotate(-100deg);
+            }
+        }    
+        .rlh{
+            height: 250px;
+            width: 30px;
+            border: 1px solid green;
+            border-radius: 300px;
+            position: relative;
+            bottom: 490px;
+            left: 675px;
+            background-color: rgb(153, 248, 64);
+            animation-name: lmove;
+            animation-duration: 2s;
+            animation-iteration-count: infinite ;
+        }
+        @keyframes lmove {
+            0%,25% {
+                transform: rotate(0deg,50deg);
+            }
+            80% {
+                transform: rotate(100deg);
+            }
+        }
+        .rrl{
+            height: 100px;
+            width: 50px;
+            border: 1px solid green;
+            border-radius: 300px;
+            position: relative;
+            bottom: 470px;;
+            left: 450px;
+            background-color: rgb(153, 248, 64);
+            animation-name: rlmove;
+            animation-duration: 2s;
+            animation-iteration-count: infinite ;
+        }
+        @keyframes rlmove {
+            0%,25% {
+                transform: rotate(0deg,50deg);
+            }
+            80% {
+                transform: rotate(100deg);
+            }
+        }        
+        
+        .rll{
+            height: 100px;
+            width: 50px;
+            border: 1px solid green;
+            border-radius: 300px;
+            position: relative;
+            bottom: 570px;;
+            left: 580px;
+            background-color: rgb(153, 248, 64);
+            animation-name: llmove;
+            animation-duration: 2s;
+            animation-iteration-count: infinite ;
+        }
+        @keyframes llmove {
+            0%,25% {
+                transform: rotate(_0deg,-50deg);
+            }
+            80% {
+                transform: rotate(-100deg);
+            }
+        }
+        .rre{
+            height: 20px;
+            width: 20px;
+            border: 1px solid hsl(0, 64%, 98%);
+            border-radius: 300px;
+            position: relative;
+            bottom: 1007px;
+            left: 460px;
+            background-color: azure;
+            animation-name: rcolor;
+            animation-duration: 2s;
+            animation-iteration-count: infinite ;   
+        }
+        @keyframes rcolor {
+            25%{
+                background-color: blue;
+            }
+            50%{
+                background-color: yellow;
+            }
+            100%{
+                background-color: green;
+            }
+        }
+        .rle{
+            height: 20px;
+            width: 20px;
+            border: 1px solid #fffdfd;
+            border-radius: 300px;
+            position: relative;
+            bottom: 1029px;
+            left: 600px;
+            background-color: azure;
+            animation-name: lcolor;
+            animation-duration: 2s;
+            animation-iteration-count: infinite ;   
+        }
+        @keyframes lcolor {
+            25%{
+                background-color: blue;
+            }
+            50%{
+                background-color: yellow;
+            }
+            100%{
+                background-color: green;
+            }
+        }
+    </style>
+    <body>
+        <h1> T</h1><hr>
+        <div class="box">
+        <div class="rb"></div>
+        <div class="rrh"></div> 
+        <div class="rlh"></div>
+        <div class="rrl"></div>
+        <div class="rll"></div>
+        <div class="rre"></div>
+        <div class="rle"></div>
+        </div>
+    </body>
